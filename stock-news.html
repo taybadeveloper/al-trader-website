@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stock News - Al-trader</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.11.2/build/css/intlTelInput.min.css">
+  <meta name="description" content="Stock News - latest stock market news, ETFs and investment updates from AL Trader.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/pages.css">
+</head>
+<body>
+
+  <!-- ===== Scroll progress ===== -->
+  <div class="scroll-progress" id="progressBar" aria-hidden="true"></div>
+
+  <!-- ===== Topbar ===== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-tag"><span class="dot"></span><span>AL Trader ™ — The Official App Website 2026</span></div>
+      <div class="topbar-right">
+        <a class="topbar-mail" href="mailto:support@al-trader.org">✉ support@al-trader.org</a>
+        <select class="lang-select" id="langSelect" aria-label="Language">
+          <option value="en" selected>EN</option>
+          <option value="ja">JA</option>
+          <option value="nl">NL</option>
+          <option value="it">IT</option>
+          <option value="es">ES</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 19 L12 5 L20 19"/>
+            <line x1="7.5" y1="14" x2="16.5" y2="14"/>
+          </svg>
+        </span>
+        AL Trader™
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="invest.html">Invest</a></li>
+        <li><a href="market.html">Market</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li class="has-dropdown">
+          <button type="button" aria-expanded="false" class="active">News</button>
+          <div class="dropdown-menu">
+            <a href="crypto-news.html">Crypto News</a>
+            <a href="forex-news.html">Forex News</a>
+            <a href="stock-news.html">Stock News</a>
+          </div>
+        </li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+      <a href="contact-us.html" class="btn btn-primary btn-sm nav-cta">Create Account</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Page hero ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Home</a><span class="sep">›</span><span>News</span><span class="sep">›</span><span>Stock News</span></div>
+      <h1>Stock News</h1>
+      <p class="sub">The latest stock market news and investment updates — aggregated for you, updated daily.</p>
+    </div>
+  </section>
+
+    <!-- ===== Stock news feed ===== -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="news-feed">
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Coinbase Says Crypto's Next Wave of Growth Will Come From AI Agents. Here's What Crypto Investors Need to Know.</h3>
+            <p>Coinbase expects growth to come from AI agents transacting with one another, and believes the preconditions for that wave are already met.</p>
+            <div class="news-meta-s"><span class="src">Motley Fool</span><span>Sep 6, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Michael Saylor's Strategy Continues to Sell Bitcoin. That's Why I'm Doubling Down on Bitcoin Right Now.</h3>
+            <p>Strategy kept selling BTC in August, yet the price still rose meaningfully over that period.</p>
+            <div class="news-meta-s"><span class="src">Motley Fool</span><span>Sep 5, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Crypto Market Today, Sept. 3: Bitcoin Reclaims $81,000 on Fed Rate Pause Signals</h3>
+            <p>BTC +5.5% to $81,491.82; ETH +5.2% to $2,511.01; SOL +5.9% to $105.30; total market cap +4.7% to $2.82T as risk appetite returned.</p>
+            <div class="news-meta-s"><span class="src">Motley Fool</span><span>Sep 3, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>XRP reserves on Binance fall by over 500 million in 9 months</h3>
+            <p>Binance XRP supply dropped >500M in ~9 months even as Ripple kept its monthly unlock schedule through Sep 2.</p>
+            <div class="news-meta-s"><span class="src">CryptoSlate</span><span>Sep 2, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Best-Performing ETF Areas of August</h3>
+            <p>August leaders: shipping, crypto, precious metals, biotech, copper, uranium, cloud software ETFs.</p>
+            <div class="news-meta-s"><span class="src">ETF Trends</span><span>Sep 1, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Should You Put 5% of Your Portfolio in Bitcoin? Here's What the Numbers Say.</h3>
+            <p>BTC is no longer a fringe speculative asset; it raises portfolio risk but, with low stock correlation, works as a diversifier.</p>
+            <div class="news-meta-s"><span class="src">Motley Fool</span><span>Sep 1, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Monster $100 million flows into Spot XRP ETFs in five days</h3>
+            <p>US spot XRP ETFs logged >$100M in weekly inflows, their best figure in months.</p>
+            <div class="news-meta-s"><span class="src">CryptoSlate</span><span>Aug 31, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>According to BlackRock, Bitcoin Is Still a Great Portfolio Diversifier. So How Much Bitcoin Should You Be Holding in Your Portfolio?</h3>
+            <p>BlackRock's suggested allocation is 1–2% in BTC; economic worries recently refocused investors on crypto.</p>
+            <div class="news-meta-s"><span class="src">Motley Fool</span><span>Aug 30, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Crypto ETFs: Bitcoin Leads a Broader Rebound</h3>
+            <p>BTC climbed from the low-$60,000s to ~$80,000, gaining ~20% in a week on macro improvement, short covering, regulatory optimism, and ETF demand.</p>
+            <div class="news-meta-s"><span class="src">ETF Trends</span><span>Aug 27, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Forget AI Stocks: 3 Cryptocurrencies to Buy and Hold Instead</h3>
+            <p>Suggests BTC may be in recovery after a strong August; ETH still leads DeFi with rising institutional adoption.</p>
+            <div class="news-meta-s"><span class="src">Motley Fool</span><span>Aug 27, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Hackers Just Stole $130 Million Worth of Bitcoin From Cold Storage. Here's Why That Matters for Bitcoin Investors.</h3>
+            <p>Coldcard — a reputedly secure hardware wallet — was hacked; most investors likely won't self-custody keys.</p>
+            <div class="news-meta-s"><span class="src">Motley Fool</span><span>Aug 26, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Crypto Market Today, Aug. 25: Bitcoins Rebound Above $80,000 -- Has it Finally Bottomed?</h3>
+            <p>BTC +0.3% to $78,932.12; ETH −0.5% to $2,460.57; SOL +1.8% to $97.93.</p>
+            <div class="news-meta-s"><span class="src">Motley Fool</span><span>Aug 25, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Gold and BTC Surge As Bessent Reignites The "Debasement Trade"</h3>
+            <p>Bessent's bond maneuvers giving the global debasement trade new life, lifting gold and bitcoin.</p>
+            <div class="news-meta-s"><span class="src">Bloomberg</span><span>Aug 25, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Best-Performing Leveraged ETF Areas of Last Week</h3>
+            <p>Biotech, AI, crypto, and Bitcoin-linked leveraged ETFs surged despite higher Treasury yields.</p>
+            <div class="news-meta-s"><span class="src">ETF Trends</span><span>Aug 24, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>BlackRock Says the Long-Term Investment Thesis for Bitcoin Remains Intact. Is Bitcoin Now a Buy?</h3>
+            <p>The 40% BTC drawdown looks corrective, not structural; its historical lack of correlation makes it a unique diversifier.</p>
+            <div class="news-meta-s"><span class="src">Motley Fool</span><span>Aug 24, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Crypto Is Surging After President Trump Pushes Congress to Pass the Clarity Act. Which Cryptocurrencies Are Worth Buying Now?</h3>
+            <p>The Clarity Act could spur innovation; investors shouldn't ignore established coins like Bitcoin.</p>
+            <div class="news-meta-s"><span class="src">Motley Fool</span><span>Aug 21, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Bitcoin Explodes Higher, Revisiting IBIT And BTC As The Debasement Trade Returns</h3>
+            <p>BTC hit fresh highs above $75,000 on renewed debasement trades and Treasury buyback news.</p>
+            <div class="news-meta-s"><span class="src">Seeking Alpha</span><span>Aug 21, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Bitcoin Rally Tops $79,000. Crypto Shorts, ETF Flows Soar.</h3>
+            <p>A short squeeze and ETF inflows intensified after Treasury bond buyback news; crypto stocks spiked.</p>
+            <div class="news-meta-s"><span class="src">Barron's</span><span>Aug 21, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Bitcoin surges above $70K as Trump backs Clarity Act, Treasury ramps up buybacks</h3>
+            <p>BTC +4.6% to $72,475.25, roughly +12% over two days after trading near $63,000 earlier that week.</p>
+            <div class="news-meta-s"><span class="src">CoinDesk</span><span>Aug 20, 2026</span></div>
+          </div>
+        </article>
+        <article class="news-item reveal">
+          <span class="n-ico">📊</span>
+          <div>
+            <h3>Crypto comeback? Bitcoin, ethereum are headed for their best day in months as investors flock to hard assets</h3>
+            <p>Traders credited the crypto-bill push and bond-market disruption for reviving momentum in the beaten-down sector.</p>
+            <div class="news-meta-s"><span class="src">CoinDesk</span><span>Aug 20, 2026</span></div>
+          </div>
+        </article>
+      </div>
+
+      <div class="pagination">
+        <span class="page-info">Total Pages: 34 · Showing Page: 1</span>
+        <a href="#" class="page-btn current">1</a>
+        <a href="#" class="page-btn">Next →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA band ===== -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="reveal">
+        <h2>Never Miss a Market Move</h2>
+        <p>Stay updated with the latest market news and trade with confidence using AL Trader's real-time insights.</p>
+        <div class="hero-cta" style="justify-content: center; margin-bottom: 0;">
+          <a href="app-download.html" class="btn btn-white">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12"/><path d="m7 10 5 5 5-5"/><path d="M5 21h14"/></svg>
+            Amazon App Store
+          </a>
+          <a href="contact-us.html" class="btn btn-dark">OPEN A FREE ACCOUNT</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Registration section ===== -->
+  <section class="section form-section" id="reg-form">
+    <div class="container">
+      <div class="reg-grid">
+        <aside class="reg-side reveal">
+          <span class="kicker">Registration</span>
+          <h2>Explore Trading Opportunities</h2>
+          <p>Open your free AL Trader account in minutes and unlock the world of online trading and investing.</p>
+          <ul class="reg-benefits">
+            <li><span class="tick">✓</span> Free account opening — no hidden fees</li>
+            <li><span class="tick">✓</span> Low minimum deposits to get started</li>
+            <li><span class="tick">✓</span> Real-time market data &amp; AI insights</li>
+            <li><span class="tick">✓</span> 24/7 dedicated customer support</li>
+            <li><span class="tick">✓</span> Secure and regulated environment</li>
+          </ul>
+          <div class="reg-badges">
+            <span class="reg-badge">🔒 SSL Secured</span>
+            <span class="reg-badge">🛡️ Regulated</span>
+            <span class="reg-badge">⚡ Fast Withdrawals</span>
+          </div>
+        </aside>
+
+        <div class="form-card reveal">
+          <h2 class="form-heading">Create Your Account</h2>
+          <p class="form-subhead">Fill in your details and start your trading journey today.</p>
+          <form id="signupForm" action="#" method="post" autocomplete="off">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="field">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="field">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" required>
+                </div>
+              </div>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+            <div class="consent">
+              <input type="checkbox" checked="checked" id="alwaysCheckedCheckbox" aria-label="Agree to terms">
+              <span>Make sure to review and agree to our <a href="https://al-trader.org/privacy-policy/">Privacy Policy</a> and <a href="https://al-trader.org/risk-warning/">Terms &amp; Conditions</a>.</span>
+            </div>
+          </form>
+          <div class="form-success" id="formSuccess" role="status">✓ Thank you! Your account request has been received.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-mark">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19 L12 5 L20 19"/>
+                <line x1="7.5" y1="14" x2="16.5" y2="14"/>
+              </svg>
+            </span>
+            AL Trader™
+          </a>
+          <p>Welcome to AL Trader - An Investment Tool for Investors. Your Gateway to the World of Online Trading and Investing!</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93Z"/></svg>
+            </a>
+            <a href="#" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>Invest</h4>
+          <ul>
+            <li><a href="index.html">Al-Trader Account</a></li>
+            <li><a href="mt5.html">Meta Trader 5</a></li>
+            <li><a href="mobile-app.html">Al Trader Mobile App</a></li>
+            <li><a href="deposit-options.html">Deposit Options</a></li>
+            <li><a href="online-trading-advantages.html">Online Trading Advantages</a></li>
+            <li><a href="mobile-app.html">Download</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Where to Invest</h4>
+          <ul>
+            <li><a href="forex.html">Forex</a></li>
+            <li><a href="shares.html">Shares</a></li>
+            <li><a href="shares-cfds.html">Shares CFD's</a></li>
+            <li><a href="indices-cfds.html">Indices CFD's</a></li>
+            <li><a href="commodities-cfds.html">Commodities CFD's</a></li>
+            <li><a href="crypto-cfds.html">Crypto CFD's</a></li>
+            <li><a href="etf-funds-cfds.html">ETF funds CFDs</a></li>
+            <li><a href="instruments-specification.html">Instruments Specification</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Market</h4>
+          <ul>
+            <li><a href="market-rollovers.html">Market Rollovers</a></li>
+            <li><a href="contact-us.html">Live Quotes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="al-trader-group.html">Al-Trader Group</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Other</h4>
+          <ul>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="crypto-news.html">Crypto News</a></li>
+            <li><a href="forex-news.html">Forex News</a></li>
+            <li><a href="stock-news.html">Stock News</a></li>
+            <li><a href="https://al-trader.org/disclaimers-for-al-trader/">Disclaimer</a></li>
+            <li><a href="https://al-trader.org/risk-warning/">Risk Warning</a></li>
+            <li><a href="https://al-trader.org/privacy-policy/">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 AL Trader™. All rights reserved.</span>
+        <span>The Official App Website 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Back to top ===== -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.11.2/build/js/intlTelInput.min.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>

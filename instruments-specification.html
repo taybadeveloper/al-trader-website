@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Instruments Specification | AL-Trader</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@25.11.2/build/css/intlTelInput.min.css">
+  <meta name="description" content="Instruments Specification - detailed specs for every asset class on AL Trader: Forex, Shares, Indices, Commodities, Crypto CFDs and ETFs.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/style.css">
+  <link rel="stylesheet" href="assets/pages.css">
+</head>
+<body>
+
+  <!-- ===== Scroll progress ===== -->
+  <div class="scroll-progress" id="progressBar" aria-hidden="true"></div>
+
+  <!-- ===== Topbar ===== -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-tag"><span class="dot"></span><span>AL Trader ™ — The Official App Website 2026</span></div>
+      <div class="topbar-right">
+        <a class="topbar-mail" href="mailto:support@al-trader.org">✉ support@al-trader.org</a>
+        <select class="lang-select" id="langSelect" aria-label="Language">
+          <option value="en" selected>EN</option>
+          <option value="ja">JA</option>
+          <option value="nl">NL</option>
+          <option value="it">IT</option>
+          <option value="es">ES</option>
+        </select>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-mark">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M4 19 L12 5 L20 19"/>
+            <line x1="7.5" y1="14" x2="16.5" y2="14"/>
+          </svg>
+        </span>
+        AL Trader™
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="invest.html">Invest</a></li>
+        <li><a href="market.html">Market</a></li>
+        <li><a href="how-it-works.html">How It Works</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li class="has-dropdown">
+          <button type="button" aria-expanded="false">News</button>
+          <div class="dropdown-menu">
+            <a href="crypto-news.html">Crypto News</a>
+            <a href="forex-news.html">Forex News</a>
+            <a href="stock-news.html">Stock News</a>
+          </div>
+        </li>
+        <li><a href="contact-us.html">Contact Us</a></li>
+      </ul>
+      <a href="contact-us.html" class="btn btn-primary btn-sm nav-cta">Create Account</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== Page hero ===== -->
+  <section class="page-hero">
+    <div class="container">
+      <div class="crumbs"><a href="index.html">Home</a><span class="sep">›</span><span>Instruments Specification</span></div>
+      <h1>Instruments <span class="grad">Specification</span></h1>
+      <p class="sub">Detailed specifications for every asset class available on AL Trader.</p>
+    </div>
+  </section>
+
+  <!-- ===== Asset class specifications ===== -->
+  <section class="section bg-white">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">Specifications</span>
+        <h2>Asset Class <span class="grad-text">Specifications</span></h2>
+      </div>
+
+      <div class="rev-shell reveal">
+        <div class="rev-row">
+          <span class="rev-num">01</span>
+          <div class="rev-info">
+            <h4>Forex</h4>
+            <p>Major and minor currency pairs · 24/5 market · Up to 1:30 leverage</p>
+          </div>
+          <span class="rev-ico">💱</span>
+        </div>
+        <div class="rev-row">
+          <span class="rev-num">02</span>
+          <div class="rev-info">
+            <h4>Shares</h4>
+            <p>Company shares on major exchanges · Exchange hours · Up to 1:5 leverage</p>
+          </div>
+          <span class="rev-ico">📈</span>
+        </div>
+        <div class="rev-row">
+          <span class="rev-num">03</span>
+          <div class="rev-info">
+            <h4>Indices</h4>
+            <p>S&amp;P 500, Nasdaq 100, DAX 40, FTSE 100 · Exchange hours · Up to 1:20 leverage</p>
+          </div>
+          <span class="rev-ico">🌐</span>
+        </div>
+        <div class="rev-row">
+          <span class="rev-num">04</span>
+          <div class="rev-info">
+            <h4>Commodities</h4>
+            <p>Gold, silver, crude oil, natural gas · Exchange hours · Up to 1:10 leverage</p>
+          </div>
+          <span class="rev-ico">🛢️</span>
+        </div>
+        <div class="rev-row">
+          <span class="rev-num">05</span>
+          <div class="rev-info">
+            <h4>Crypto CFDs</h4>
+            <p>Bitcoin, Ethereum and more · 24/7 market · Up to 1:2 leverage</p>
+          </div>
+          <span class="rev-ico">₿</span>
+        </div>
+        <div class="rev-row">
+          <span class="rev-num">06</span>
+          <div class="rev-info">
+            <h4>ETFs</h4>
+            <p>Exchange-Traded Funds across sectors · Exchange hours · Up to 1:5 leverage</p>
+          </div>
+          <span class="rev-ico">🧺</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA band ===== -->
+  <section class="cta-band">
+    <div class="container">
+      <div class="reveal">
+        <h2>Explore Every Asset Class</h2>
+        <p>From forex to ETFs — find the instruments that fit your strategy and open your free account today.</p>
+        <div class="hero-cta" style="justify-content: center; margin-bottom: 0;">
+          <a href="contact-us.html" class="btn btn-dark">OPEN A FREE ACCOUNT</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Registration section ===== -->
+  <section class="section form-section" id="reg-form">
+    <div class="container">
+      <div class="reg-grid">
+        <aside class="reg-side reveal">
+          <span class="kicker">Registration</span>
+          <h2>Explore Trading Opportunities</h2>
+          <p>Open your free AL Trader account in minutes and unlock the world of online trading and investing.</p>
+          <ul class="reg-benefits">
+            <li><span class="tick">✓</span> Free account opening — no hidden fees</li>
+            <li><span class="tick">✓</span> Low minimum deposits to get started</li>
+            <li><span class="tick">✓</span> Real-time market data &amp; AI insights</li>
+            <li><span class="tick">✓</span> 24/7 dedicated customer support</li>
+            <li><span class="tick">✓</span> Secure and regulated environment</li>
+          </ul>
+          <div class="reg-badges">
+            <span class="reg-badge">🔒 SSL Secured</span>
+            <span class="reg-badge">🛡️ Regulated</span>
+            <span class="reg-badge">⚡ Fast Withdrawals</span>
+          </div>
+        </aside>
+
+        <div class="form-card reveal">
+          <h2 class="form-heading">Create Your Account</h2>
+          <p class="form-subhead">Fill in your details and start your trading journey today.</p>
+          <form id="signupForm" action="#" method="post" autocomplete="off">
+              <div class="form-grid">
+                <div class="field">
+                  <label for="firstName">First Name</label>
+                  <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="field">
+                  <label for="lastName">Last Name</label>
+                  <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="field">
+                  <label for="email">Email</label>
+                  <input type="email" id="email" name="email" required>
+                </div>
+                <div class="field">
+                  <label for="phone">Phone Number</label>
+                  <input type="tel" id="phone" name="phone" required>
+                </div>
+              </div>
+            <button type="submit" class="btn btn-primary">Create Account</button>
+            <div class="consent">
+              <input type="checkbox" checked="checked" id="alwaysCheckedCheckbox" aria-label="Agree to terms">
+              <span>Make sure to review and agree to our <a href="https://al-trader.org/privacy-policy/">Privacy Policy</a> and <a href="https://al-trader.org/risk-warning/">Terms &amp; Conditions</a>.</span>
+            </div>
+          </form>
+          <div class="form-success" id="formSuccess" role="status">✓ Thank you! Your account request has been received.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-mark">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 19 L12 5 L20 19"/>
+                <line x1="7.5" y1="14" x2="16.5" y2="14"/>
+              </svg>
+            </span>
+            AL Trader™
+          </a>
+          <p>Welcome to AL Trader - An Investment Tool for Investors. Your Gateway to the World of Online Trading and Investing!</p>
+          <div class="footer-socials">
+            <a href="#" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.9 1.15h3.68l-8.04 9.19L24 22.85h-7.41l-5.8-7.58-6.64 7.58H.47l8.6-9.83L0 1.15h7.59l5.24 6.93 6.07-6.93Z"/></svg>
+            </a>
+            <a href="#" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M2 21l21-9L2 3v7l15 2-15 2z"/></svg>
+            </a>
+            <a href="#" aria-label="YouTube">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31 31 0 0 0 0 12a31 31 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31 31 0 0 0 24 12a31 31 0 0 0-.5-5.8zM9.6 15.6V8.4L15.8 12l-6.2 3.6z"/></svg>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h4>Invest</h4>
+          <ul>
+            <li><a href="index.html">Al-Trader Account</a></li>
+            <li><a href="mt5.html">Meta Trader 5</a></li>
+            <li><a href="mobile-app.html">Al Trader Mobile App</a></li>
+            <li><a href="deposit-options.html">Deposit Options</a></li>
+            <li><a href="online-trading-advantages.html">Online Trading Advantages</a></li>
+            <li><a href="mobile-app.html">Download</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Where to Invest</h4>
+          <ul>
+            <li><a href="forex.html">Forex</a></li>
+            <li><a href="shares.html">Shares</a></li>
+            <li><a href="shares-cfds.html">Shares CFD's</a></li>
+            <li><a href="indices-cfds.html">Indices CFD's</a></li>
+            <li><a href="commodities-cfds.html">Commodities CFD's</a></li>
+            <li><a href="crypto-cfds.html">Crypto CFD's</a></li>
+            <li><a href="etf-funds-cfds.html">ETF funds CFDs</a></li>
+            <li><a href="instruments-specification.html">Instruments Specification</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Market</h4>
+          <ul>
+            <li><a href="market-rollovers.html">Market Rollovers</a></li>
+            <li><a href="contact-us.html">Live Quotes</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>About Us</h4>
+          <ul>
+            <li><a href="al-trader-group.html">Al-Trader Group</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Other</h4>
+          <ul>
+            <li><a href="documents.html">Documents</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="crypto-news.html">Crypto News</a></li>
+            <li><a href="forex-news.html">Forex News</a></li>
+            <li><a href="stock-news.html">Stock News</a></li>
+            <li><a href="https://al-trader.org/disclaimers-for-al-trader/">Disclaimer</a></li>
+            <li><a href="https://al-trader.org/risk-warning/">Risk Warning</a></li>
+            <li><a href="https://al-trader.org/privacy-policy/">Privacy policy</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© 2026 AL Trader™. All rights reserved.</span>
+        <span>The Official App Website 2026</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== Back to top ===== -->
+  <button class="back-top" id="backTop" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 19V5"/><path d="m5 12 7-7 7 7"/></svg>
+  </button>
+
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@25.11.2/build/js/intlTelInput.min.js"></script>
+  <script src="assets/main.js"></script>
+</body>
+</html>
