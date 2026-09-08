@@ -459,6 +459,72 @@
   .news-item { padding: 18px 16px; gap: 12px; }
 }
 
+/* ===== Legal pages (Disclaimer, Risk Warning, Privacy Policy) ===== */
+.legal-shell {
+  max-width: 900px;
+  margin: 0 auto;
+  background: var(--white);
+  border: 1px solid var(--line);
+  border-radius: 28px;
+  box-shadow: var(--shadow-soft);
+  padding: 50px 54px;
+  position: relative;
+  overflow: hidden;
+}
+
+.legal-shell::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 6px;
+  background: var(--grad);
+}
+
+.legal-shell h3 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin: 30px 0 10px;
+}
+
+.legal-shell h3:first-of-type { margin-top: 0; }
+
+.legal-shell p {
+  color: var(--body);
+  font-size: 0.95rem;
+  line-height: 1.75;
+  margin-bottom: 12px;
+}
+
+.legal-shell ul {
+  padding-left: 22px;
+  margin: 10px 0 16px;
+  list-style: none;
+}
+
+.legal-shell ul li {
+  color: var(--body);
+  font-size: 0.95rem;
+  line-height: 1.7;
+  margin-bottom: 8px;
+  position: relative;
+  padding-left: 20px;
+}
+
+.legal-shell ul li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  top: 1px;
+  color: var(--indigo);
+  font-weight: 800;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 560px) {
+  .legal-shell { padding: 32px 22px; }
+}
+
 /* ===== Asset cards — improved (homepage Assets section) ===== */
 .asset-tag.hot {
   background: linear-gradient(135deg, #fef3c7, #fde68a);
